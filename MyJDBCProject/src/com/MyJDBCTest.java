@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class MyJDBCTest {
 	public static void main(String[] args) throws SQLException{
-		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/flm","root","Vinay@17");
+		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/flm","root","password");
 		System.out.println("Connection succesful..");
 		Statement statement = connection.createStatement();
 		String CreateTable = "create table player (id int,name varchar(25), age int);";
